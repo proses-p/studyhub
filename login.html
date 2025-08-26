@@ -25,21 +25,24 @@
                 font-size: small;
             }
             header {
-                background-color: #f28c28;
+                background: #f28c28;
                 text-align: center;
                 color: black;
                 font-size: small;
+                margin: 50px;
             }
             label {
                 display: block;
                 color: black;
                 margin-top: 15px;
+                margin-left: 50px;
             }
             input {
                 width: 100;
                 padding: 10px;
                 border-radius: 5px;
                 margin-top: 5px;
+                margin-left: 50px;
             }
             button {
                 background-color: #f28c28;
@@ -66,8 +69,10 @@
     </head>
     <body>
         <div class="container" id="LoginForm">
-            <header></h2>Please login Account using email or Phone</h2></header><hr>
-            <?php if (!empty($msg)) echo "<p style='color:red'>$msg</p>"; ?>
+            <header>
+
+                <P>Please login Account using email or Phone</P>
+            </header>
             <form method="POST" action="login.php">
                 <label for="emailphone">Email or Phone:</label>
                 <input type="text" id="email" name="emailphone" placeholder="enter email/phone" required>
