@@ -4,4 +4,4 @@ services:
      env: docker
      plan: free
      dockerContext: .
-     startCommand: php -s 0.0.0.0:10000 -t public
+     startCommand: php -s 0.0.0.0:$PORT -t .
